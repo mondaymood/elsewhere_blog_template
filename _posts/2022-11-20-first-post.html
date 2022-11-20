@@ -1,0 +1,75 @@
+---
+layout: default
+title: First post
+author: Tara Hunka
+category: travel
+date: 2022-11-20
+featured-image: bg-travel
+seo:
+  title: SEO title
+  meta-description:
+  meta-keywords:
+  featured-image_path:
+  hide-from-google: false
+---
+
+<!------------------ Title ------------------>
+
+<section class="text-center">
+<span class="text-sm uppercase block">{{page.category}}</span>
+<h1 class="text-2xl">{{page.title}}</h1>
+<span class="text-sm block">{{page.author}}</span>
+<span class="text-sm block">{{page.date | date: "%a, %b %d, %y"}}</span>
+</section>
+
+<!------------------ Full Width Image ------------------>
+
+<section> 
+  <div class="{{page.featured-image}} bg-cover h-60"></div>
+</section>
+
+<!------------------ Content: Text/Image ------------------>
+
+<section class="grid grid-cols-2 gap-2">
+  <div class="{{page.featured-image}} bg-cover"></div>
+  <div class="bg-slate-500">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deserunt corrupti autem blanditiis doloremque, aut illo nemo perferendis eligendi quas consequatur perspiciatis laudantium sint voluptatum eum esse quisquam repellendus molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deserunt corrupti autem blanditiis doloremque, aut illo nemo perferendis eligendi quas consequatur perspiciatis laudantium sint voluptatum eum esse quisquam repellendus molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deserunt corrupti autem blanditiis doloremque, aut illo nemo perferendis eligendi quas consequatur perspiciatis laudantium sint voluptatum eum esse quisquam repellendus molestiae.    
+    </p>
+  </div>
+</section>
+
+<!------------------ Content: Text ------------------>
+
+<section class="bg-slate-500">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deserunt corrupti autem blanditiis doloremque, aut illo nemo perferendis eligendi quas consequatur perspiciatis laudantium sint voluptatum eum esse quisquam repellendus molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deserunt corrupti autem blanditiis doloremque, aut illo nemo perferendis eligendi quas consequatur perspiciatis laudantium sint voluptatum eum esse quisquam repellendus molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deserunt corrupti autem blanditiis doloremque, aut illo nemo perferendis eligendi quas consequatur perspiciatis laudantium sint voluptatum eum esse quisquam repellendus molestiae.    
+    </p>
+</section>
+
+<!------------------ Content: Text/Image ------------------>
+
+<section class="grid grid-cols-2 gap-2">
+  <div class="bg-slate-500">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deserunt corrupti autem blanditiis doloremque, aut illo nemo perferendis eligendi quas consequatur perspiciatis laudantium sint voluptatum eum esse quisquam repellendus molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deserunt corrupti autem blanditiis doloremque, aut illo nemo perferendis eligendi quas consequatur perspiciatis laudantium sint voluptatum eum esse quisquam repellendus molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deserunt corrupti autem blanditiis doloremque, aut illo nemo perferendis eligendi quas consequatur perspiciatis laudantium sint voluptatum eum esse quisquam repellendus molestiae.    
+    </p>
+  </div>
+  <div class="bg-slate-500">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deserunt corrupti autem blanditiis doloremque, aut illo nemo perferendis eligendi quas consequatur perspiciatis laudantium sint voluptatum eum esse quisquam repellendus molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deserunt corrupti autem blanditiis doloremque, aut illo nemo perferendis eligendi quas consequatur perspiciatis laudantium sint voluptatum eum esse quisquam repellendus molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deserunt corrupti autem blanditiis doloremque, aut illo nemo perferendis eligendi quas consequatur perspiciatis laudantium sint voluptatum eum esse quisquam repellendus molestiae.    
+    </p>
+  </div>
+</section>
+
+<!------------------ Video ------------------>
+
+
+
+<!------------------ Gallery ------------------>
+
+<h2 class="text-lg text-center">Gallery</h2>
+<section class="grid grid-cols-3 gap-2 h-96">
+  <div class="{{page.featured-image}} bg-cover"></div>
+  <div class="{{page.featured-image}} bg-cover"></div>
+  <div class="{{page.featured-image}} bg-cover"></div>
+  <div class="{{page.featured-image}} bg-cover"></div>
+  <div class="{{page.featured-image}} bg-cover"></div>
+  <div class="{{page.featured-image}} bg-cover"></div>
+</section>
