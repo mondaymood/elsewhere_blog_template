@@ -1,16 +1,16 @@
 ---
 layout: default
-title: Second post
+title: What to do in Canada
 author: Tara Hunka
 category: travel
 date: 2022-11-20
 featured-image: bg-travel
 
 content-block:
-  heading: Beautiful Bali
+  heading: Beautiful Canada
   col-1-html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deserunt corrupti autem blanditiis doloremque, aut illo nemo perferendis eligendi quas consequatur perspiciatis laudantium sint voluptatum eum esse quisquam repellendus molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deserunt corrupti autem blanditiis doloremque, aut illo nemo perferendis eligendi quas consequatur perspiciatis laudantium sint voluptatum eum esse quisquam repellendus molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deserunt corrupti autem blanditiis doloremque, aut illo nemo perferendis eligendi quas consequatur perspiciatis laudantium sint voluptatum eum esse quisquam repellendus molestiae.   
   col-2-html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deserunt corrupti autem blanditiis doloremque, aut illo nemo perferendis eligendi quas consequatur perspiciatis laudantium sint voluptatum eum esse quisquam repellendus molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deserunt corrupti autem blanditiis doloremque, aut illo nemo perferendis eligendi quas consequatur perspiciatis laudantium sint voluptatum eum esse quisquam repellendus molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deserunt corrupti autem blanditiis doloremque, aut illo nemo perferendis eligendi quas consequatur perspiciatis laudantium sint voluptatum eum esse quisquam repellendus molestiae.   
-  image: 
+  image: https://images.unsplash.com/photo-1617803672592-177dbdb3abfa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80
 
 video-url: https://www.youtube.com/embed/WteZwxsvICc  
 
@@ -48,7 +48,7 @@ seo:
 <!------------------ Content: Text/Image Left ------------------>
 
 <section class="grid grid-cols-1 md:grid-cols-2 gap-10 my-10 container mx-auto px-6">
-  <div class="{{page.featured-image}} bg-cover h-80 md:h-auto"></div>
+  <img class="h-80 md:h-auto object-cover" src="{{image.image-url}}">
   <div>
     <h3 class="text-lg pb-6">{{page.content-block.heading}}</h3>
     <p>{{page.content-block.col-1-html}}</p>
