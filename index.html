@@ -12,19 +12,19 @@ seo:
 
 <!------------------ CTA-Banner ------------------>
 
-<section class="border-y-2 flex items-center justify-center container p-6 my-10 mx-auto">
+<section class="border-y-2 flex flex-wrap items-center justify-center container p-6 my-10 mx-auto">
   <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-  <div ><a href="" class="m-6 py-3 px-6 bg-slate-600 text-white hover:bg-slate-400">Say hello</a></div>
+  <div class=""><a href="" class="m-6 py-3 px-6 bg-slate-600 text-white hover:bg-slate-400">Say hello</a></div>
 </section>
 
 <!------------------ Blog posts ------------------>
 
-<section class="container px-6 my-10 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 text-center">
+<section class="container p-6 my-10 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 text-center">
   
   {% for post in site.posts %}
 
   <a href="">
-    <img class="w-full h-80 md:h-full object-cover" src="{{post.featured-image}}">
+    <img class="container my-10 mx-auto h-80 md:h-full object-cover" src="{{post.featured-image}}">
     <span class="text-sm uppercase block py-5">{{post.category}}</span>
     <h1 class="text-lg">{{post.title}}</h1>
     <span class="text-sm block py-5">{{post.author}}</span>
