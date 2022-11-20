@@ -10,3 +10,20 @@ seo:
 
 ---
 <h1 class="text-4xl font-bold text-slate-900">Welcome to your homepage!</h1>
+
+
+<section class="container px-6 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 text-center">
+  
+  {% for post in site.posts %}
+
+  <div>
+    <div class="{{post.featured-image}} bg-cover h-72"></div>
+    <span class="text-sm uppercase block py-5">{{post.category}}</span>
+    <h1 class="text-lg">{{post.title}}</h1>
+    <span class="text-sm block py-5">{{post.author}}</span>
+    <span class="text-sm block">{{post.date | date: "%d %b %Y"}}</span>
+  </div>
+
+  {% endfor %}
+
+</section>

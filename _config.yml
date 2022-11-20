@@ -1,1 +1,4 @@
-permalink: /posts/:slug
+collections:
+ posts:
+   output: true
+   permalink: /posts/:year/:slug
