@@ -9,20 +9,27 @@ seo:
   hide-from-google: false
 
 ---
-<h1 class="text-4xl font-bold text-slate-900">Welcome to your homepage!</h1>
 
+<!------------------ CTA-Banner ------------------>
 
-<section class="container px-6 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 text-center">
+<section class="border-y-2 flex items-center justify-center container p-6 my-10 mx-auto">
+  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+  <div ><a href="" class="m-6 py-3 px-6 bg-slate-600 text-white hover:bg-slate-400">Say hello</a></div>
+</section>
+
+<!------------------ Blog posts ------------------>
+
+<section class="container px-6 my-10 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 text-center">
   
   {% for post in site.posts %}
 
-  <div>
-    <div class="{{post.featured-image}} bg-cover h-72"></div>
+  <a href="">
+    <img class="w-full h-80 md:h-full object-cover" src="{{post.featured-image}}">
     <span class="text-sm uppercase block py-5">{{post.category}}</span>
     <h1 class="text-lg">{{post.title}}</h1>
     <span class="text-sm block py-5">{{post.author}}</span>
     <span class="text-sm block">{{post.date | date: "%d %b %Y"}}</span>
-  </div>
+  </a>
 
   {% endfor %}
 
