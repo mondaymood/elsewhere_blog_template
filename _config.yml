@@ -100,15 +100,27 @@ _array_structures:
         _id: text
         title: Text
         col-size: md:grid-cols-1
-        heading: What a great text
-        copy_html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+        heading_1: What a great text
+        copy_1_html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
           deserunt corrupti autem blanditiis doloremque, aut illo nemo perferendis
           eligendi quas consequatur perspiciatis laudantium sint voluptatum eum esse
           quisquam repellendus molestiae. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Temporibus deserunt corrupti autem blanditiis
-          doloremque, aut illo nemo perferendis eligendi quas consequatur
-          perspiciatis laudantium sint voluptatum eum esse quisquam repellendus
-          molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Temporibus deserunt corrupti autem blanditiis doloremque, aut illo nemo
-          perferendis eligendi quas consequatur perspiciatis laudantium sint
-          voluptatum eum esse quisquam repellendus molestiae.
+          adipisicing elit.
+        heading_2: What a great text
+        copy_2_html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+          deserunt corrupti autem blanditiis doloremque, aut illo nemo perferendis
+          eligendi quas consequatur perspiciatis laudantium sint voluptatum eum esse
+          quisquam repellendus molestiae. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit.
+        heading_3: What a great text
+        copy_3_html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+          deserunt corrupti autem blanditiis doloremque, aut illo nemo perferendis
+          eligendi quas consequatur perspiciatis laudantium sint voluptatum eum esse
+          quisquam repellendus molestiae. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit.
+        heading_4: What a great text
+        copy_4_html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+          deserunt corrupti autem blanditiis doloremque, aut illo nemo perferendis
+          eligendi quas consequatur perspiciatis laudantium sint voluptatum eum esse
+          quisquam repellendus molestiae. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit.     
