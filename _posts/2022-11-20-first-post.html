@@ -12,7 +12,10 @@ content-block:
   col-2-html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deserunt corrupti autem blanditiis doloremque, aut illo nemo perferendis eligendi quas consequatur perspiciatis laudantium sint voluptatum eum esse quisquam repellendus molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deserunt corrupti autem blanditiis doloremque, aut illo nemo perferendis eligendi quas consequatur perspiciatis laudantium sint voluptatum eum esse quisquam repellendus molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deserunt corrupti autem blanditiis doloremque, aut illo nemo perferendis eligendi quas consequatur perspiciatis laudantium sint voluptatum eum esse quisquam repellendus molestiae.   
   image-url: https://images.unsplash.com/photo-1617803672592-177dbdb3abfa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80
 
-video-url: https://www.youtube.com/embed/WteZwxsvICc  
+video-url: https://www.youtube.com/embed/WteZwxsvICc
+
+banner:
+  overlay: true
 
 gallery:
   - image-url: https://images.unsplash.com/photo-1508693926297-1d61ee3df82a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80
@@ -23,11 +26,11 @@ gallery:
   - image-url: https://images.unsplash.com/photo-1586576782138-19304c43d0e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80
 
 seo:
-  title: SEO title
-  meta-description:
-  meta-keywords:
+  title: What to do in Canada
+  meta-description: Canada
+  meta-keywords: canada, travel, outdoors, activities
   featured-image_path:
-  hide-from-google: false
+  hide-from-google: true
 ---
 
 <!------------------ Title ------------------>
@@ -38,13 +41,6 @@ seo:
 <span class="text-sm block py-5">{{page.author}}</span>
 <span class="text-sm block">{{page.date | date: "%d %b %Y"}}</span>
 </section>
-
-<!------------------ Full Width Image (bg-image)------------------>
-
-<!-- <section> 
-  <div class="{{page.featured-image}} bg-cover h-[50vh]"></div>
-</section> -->
-
 
 <!------------------ Full Width Image ------------------>
 
@@ -64,7 +60,7 @@ seo:
 
 <!------------------ Content: Text/Image Right ------------------>
 
-<section class="grid grid-cols-1 md:grid-cols-2 gap-10 my-10 container mx-auto px-6">
+<section class="grid grid-cols-1 md:grid-cols-2 gap-10 my-10 container mx-auto px-6 items-center">
   <div>
     <h3 class="text-lg pb-6">{{page.content-block.heading}}</h3>
     <p>{{page.content-block.col-1-html}}</p>
@@ -72,11 +68,23 @@ seo:
   <img class="w-full h-80 md:h-full object-cover" src="{{page.content-block.image-url}}">
 </section>
 
+<!------------------ CTA-Banner ------------------>
+
+{% include cta-banner.html %}
+
 <!------------------ Content: Text ------------------>
 
 <section class="container mx-auto px-6">
     <div>
       <p>{{page.content-block.col-1-html}}</p>
+  </div>
+</section>
+
+<!------------------ Banner ------------------>
+
+<section> 
+  <div class="bg-travel {% if page.banner.overlay == true %} bg-blend-multiply bg-neutral-500 text-white {% endif %} bg-cover h-[50vh] my-10 flex justify-center items-center text-2xl">
+    <div class="text-lg">This is a banner</div>
   </div>
 </section>
 
@@ -94,7 +102,7 @@ seo:
 <!------------------ Video ------------------>
 
 <section class="my-10 container px-6 mx-auto">
-  <div class="w-full p-5" style="padding: 56.25% 0 0 0; position: relative;">
+  <div class="bg-slate-200 w-full p-5" style="padding: 56.25% 0 0 0; position: relative;">
   <iframe width="560" height="315" src="{{page.video-url}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 </section>
 
