@@ -10,7 +10,7 @@ _array_structures:
     - label: Banner
       icon: double arrow
       value: 
-        _id: banner
+        _id: banner_text
         title: Banner
         text: Write your text here
     - label: Title section
