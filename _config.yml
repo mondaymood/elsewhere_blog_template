@@ -34,7 +34,7 @@ _array_structures:
       icon: article
       value:
         _id: text_image_left
-        background-color: White Background
+        background-color: bg-white
         title: Content Block / Image Left
         heading: Beautiful Ontario
         col-1-html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
