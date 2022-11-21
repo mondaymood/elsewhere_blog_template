@@ -8,7 +8,7 @@ page_blocks: []
 _array_structures:
   page_blocks:
     - label: Title section
-      icon: double arrow
+      icon: article
       value: 
         _id: title_section
         title: Title section
@@ -17,7 +17,7 @@ _array_structures:
         category: travel
         date: 2022-11-21
     - label: Banner with text
-      icon: double arrow
+      icon: article
       value: 
         _id: banner_text
         title: Banner with text
@@ -25,7 +25,7 @@ _array_structures:
         featured-image: https://images.unsplash.com/photo-1511489731872-324afc650052?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=988&q=80
         overlay: true
     - label: Content Block / Image Left
-      icon: double arrow
+      icon: article
       value:
         _id: text_image_left
         title: Content Block / Image Left
@@ -43,7 +43,7 @@ _array_structures:
           voluptatum eum esse quisquam repellendus molestiae.
         image-url: https://images.unsplash.com/photo-1617803672592-177dbdb3abfa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80
     - label: Content Block / Image Right
-      icon: double arrow
+      icon: article
       value:
         id: text_image_right
         title: Content Block / Image Right
@@ -61,13 +61,13 @@ _array_structures:
           voluptatum eum esse quisquam repellendus molestiae.
         image-url: https://images.unsplash.com/photo-1617803672592-177dbdb3abfa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80
     - label: Video embed
-      icon: double arrow
+      icon: article
       value:
         _id: embed_video
         title: Video
         video-url: https://www.youtube.com/embed/WteZwxsvICc
     - label: Video embed
-      icon: double arrow
+      icon: article
       value:    
         _id: gallery
         title: Gallery
