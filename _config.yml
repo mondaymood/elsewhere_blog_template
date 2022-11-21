@@ -11,7 +11,52 @@ _array_structures:
       icon: double arrow
       value: 
         _id: title_section
+        title: Title section
         heading: What to do in Vancouver
         author: Tara Hunka
         category: travel
-        date: 2022-11-21          
+        date: 2022-11-21
+    - label: Banner with text
+      icon: double arrow
+      value: 
+        _id: banner_text
+        title: Banner with text
+        text: Write your text here
+        featured-image: https://images.unsplash.com/photo-1511489731872-324afc650052?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=988&q=80
+        overlay: true
+    - label: Content Block / Image Left
+      icon: double arrow
+      value:
+        _id: text_image_left
+        title: Content Block / Image Left
+        heading: Beautiful Ontario
+        col-1-html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+          deserunt corrupti autem blanditiis doloremque, aut illo nemo perferendis
+          eligendi quas consequatur perspiciatis laudantium sint voluptatum eum esse
+          quisquam repellendus molestiae. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Temporibus deserunt corrupti autem blanditiis
+          doloremque, aut illo nemo perferendis eligendi quas consequatur
+          perspiciatis laudantium sint voluptatum eum esse quisquam repellendus
+          molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Temporibus deserunt corrupti autem blanditiis doloremque, aut illo nemo
+          perferendis eligendi quas consequatur perspiciatis laudantium sint
+          voluptatum eum esse quisquam repellendus molestiae.
+        image-url: https://images.unsplash.com/photo-1617803672592-177dbdb3abfa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80
+    - label: Content Block / Image Right
+      icon: double arrow
+      value:
+        id: text_image_right
+        title: Content Block / Image Right
+        heading: Beautiful Ontario
+        col-1-html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+          deserunt corrupti autem blanditiis doloremque, aut illo nemo perferendis
+          eligendi quas consequatur perspiciatis laudantium sint voluptatum eum esse
+          quisquam repellendus molestiae. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Temporibus deserunt corrupti autem blanditiis
+          doloremque, aut illo nemo perferendis eligendi quas consequatur
+          perspiciatis laudantium sint voluptatum eum esse quisquam repellendus
+          molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Temporibus deserunt corrupti autem blanditiis doloremque, aut illo nemo
+          perferendis eligendi quas consequatur perspiciatis laudantium sint
+          voluptatum eum esse quisquam repellendus molestiae.
+        image-url: https://images.unsplash.com/photo-1617803672592-177dbdb3abfa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80
