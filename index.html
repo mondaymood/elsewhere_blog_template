@@ -21,10 +21,9 @@ seo:
   {% for post in site.posts %}
 
   <div>
-    
-    <img class="container mx-auto h-80 md:h-full object-cover" src="{{post.featured-image}}">
+    <a href="{{post.url}}"><img class="container mx-auto h-80 object-cover" src="{{post.featured-image}}"></a>
     <span class="text-sm uppercase block py-5">{{post.category}}</span>
-    <a class="inline-block text-lg" href="{{post.url}}">{{post.title}}</a>
+    <a href="{{post.url}}" class="inline-block text-lg">{{post.title}}</a>
     <span class="text-sm block py-5">{{post.author}}</span>
     <span class="text-sm block">{{post.date | date: "%d %b %Y"}}</span>
   </div>

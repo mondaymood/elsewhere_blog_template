@@ -2,3 +2,22 @@ collections:
  posts:
    output: true
    permalink: /posts/:slug
+
+page_blocks: []
+
+_array_structures:
+  page_blocks:
+    - label: Banner
+      icon: double arrow
+      value: 
+        _id: banner
+        title: Banner
+        text: Write your text here
+    - label: Title section
+      icon: double arrow
+      value: 
+        _id: title_section
+        heading: What to do in Vancouver
+        author: Tara Hunka
+        category: travel
+        date: 2022-11-21          
