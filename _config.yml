@@ -34,6 +34,7 @@ _array_structures:
       icon: article
       value:
         _id: text_image_left
+        background-color: White Background
         title: Content Block / Image Left
         heading: Beautiful Ontario
         col-1-html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
@@ -48,7 +49,6 @@ _array_structures:
           perferendis eligendi quas consequatur perspiciatis laudantium sint
           voluptatum eum esse quisquam repellendus molestiae.
         image-url: https://images.unsplash.com/photo-1617803672592-177dbdb3abfa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80
-        background-color: White Background
     - label: Content Block / Image Right
       icon: article
       value:
