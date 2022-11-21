@@ -3,6 +3,12 @@ collections:
    output: true
    permalink: /posts/:slug
 
+_select_data:
+  background-color:
+    - bg-sky-200: Light Background
+    - bg-sky-500: Dark Background
+    - bg-white: White Background   
+
 page_blocks: []
 
 _array_structures:
@@ -42,7 +48,7 @@ _array_structures:
           perferendis eligendi quas consequatur perspiciatis laudantium sint
           voluptatum eum esse quisquam repellendus molestiae.
         image-url: https://images.unsplash.com/photo-1617803672592-177dbdb3abfa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80
-        background-colors: White Background
+        background-color: White Background
     - label: Content Block / Image Right
       icon: article
       value:
@@ -79,9 +85,3 @@ _array_structures:
           - image: https://images.unsplash.com/photo-1511489731872-324afc650052?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=988&q=80
           - image: https://images.unsplash.com/photo-1617803672592-177dbdb3abfa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80
           - image: https://images.unsplash.com/photo-1586576782138-19304c43d0e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80
-
-_select_data:
-  background-colors:
-    - bg-sky-200: Light Background
-    - bg-sky-500: Dark Background
-    - bg-white: White Background
