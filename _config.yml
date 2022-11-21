@@ -100,3 +100,15 @@ _array_structures:
         _id: text
         title: Text
         col-size: md:grid-cols-1
+        heading: What a great text
+        copy: Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+          deserunt corrupti autem blanditiis doloremque, aut illo nemo perferendis
+          eligendi quas consequatur perspiciatis laudantium sint voluptatum eum esse
+          quisquam repellendus molestiae. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Temporibus deserunt corrupti autem blanditiis
+          doloremque, aut illo nemo perferendis eligendi quas consequatur
+          perspiciatis laudantium sint voluptatum eum esse quisquam repellendus
+          molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Temporibus deserunt corrupti autem blanditiis doloremque, aut illo nemo
+          perferendis eligendi quas consequatur perspiciatis laudantium sint
+          voluptatum eum esse quisquam repellendus molestiae.
