@@ -1,7 +1,9 @@
-<section class="grid grid-cols-1 md:grid-cols-2 gap-10 my-10 container mx-auto px-6 items-center">
-  <div>
-    <h3 class="text-lg pb-6">{{block.heading}}</h3>
-    <p>{{block.col-1-html}}</p>
-  </div>
-  <img class="w-full h-80 md:h-full object-cover" src="{{block.image-url}}">
+<section class="{{block.background-color}} py-6">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 my-10 container mx-auto px-6 items-center ">
+    <div>
+      <h3 class="text-lg pb-6">{{block.heading}}</h3>
+      <p>{{block.col-1-html}}</p>
+    </div>
+    <img class="w-full h-80 md:h-full object-cover" src="{{block.image-url}}">
+</div>
 </section>
