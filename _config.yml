@@ -4,7 +4,7 @@ collections:
    permalink: /posts/:slug
 
 _select_data:
-  background-color:
+  background-colors:
     - bg-sky-200: Light Background
     - bg-sky-500: Dark Background
     - bg-white: White Background   
@@ -34,7 +34,7 @@ _array_structures:
       icon: article
       value:
         _id: text_image_left
-        background-color: bg-white
+        background-color: 
         title: Content Block / Image Left
         heading: Beautiful Ontario
         col-1-html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
