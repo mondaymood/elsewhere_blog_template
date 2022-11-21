@@ -100,4 +100,12 @@ _array_structures:
         _id: text
         title: Text
         col-size: md:grid-cols-1
-          - copy_html: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        text:
+          - heading: Nice text
+            copy_html: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          - heading: Nice text
+            copy_html: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          - heading: Nice text
+            copy_html: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          - heading: Nice text
+            copy_html: Lorem ipsum dolor sit amet consectetur adipisicing elit.  
