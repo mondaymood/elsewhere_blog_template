@@ -1,26 +1,11 @@
 <section class="container mx-auto px-6 my-10">
   <div class="grid grid-cols-1 {{block.col-size}} gap-3">
+    
+    {% for item in block.text %}
     <div>
-      <h3>{{block.heading_1}}</h3>
-      <p>{{block.copy_1_html}}</p>
+      <h3>{{block.heading}}</h3>
+      <p>{{block.copy_html}}</p>
     </div>
-    {% if col-size == md:grid-cols-2 %}
-    <div>
-      <h3>{{block.heading_2}}</h3>
-      <p>{{block.copy_2_html}}</p>
-    </div>
-    {% if col-size == md:grid-cols-3 %}
-    <div>
-      <h3>{{block.heading_3}}</h3>
-      <p>{{block.copy_3_html}}</p>
-    </div>
-    {% if col-size == md:grid-cols-4 %}
-    <div>
-      <h3>{{block.heading_4}}</h3>
-      <p>{{block.copy_4_html}}</p>
-    </div>
-    {% endif %}
-    {% endif %}
-    {% endif %}
+    {% endfor %}
 </div>
 </section>
