@@ -5,9 +5,9 @@ collections:
 
 _select_data:
   background-colors:
-    - bg-sky-200
-    - bg-sky-500
-    - bg-white
+    bg-sky-200: Light
+    bg-sky-500: Dark
+    bg-white: White
 
 page_blocks: []
 
