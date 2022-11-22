@@ -1,0 +1,41 @@
+---
+layout: default
+title: Homepage
+cta-banner: true
+cta-link: https://www.google.com
+heading: This is the main headline
+seo:
+  title: Elsewhere Blog
+  meta-description:
+  meta-keywords:
+  featured-image_path:
+  hide-from-google: false
+---
+
+<!------------------ CTA-Banner ------------------>
+
+{% if page.cta-banner == true %} 
+
+{% include cta_banner.html %}
+
+{% endif %}
+
+<!------------------ Headline ------------------>
+
+<section class="text-center">
+  <h1>{{page.heading}}</h1>
+</section>
+
+<!------------------ Masonry Grid ------------------>
+
+<section class="container mx-auto my-10 grid grid-cols-3 gap-2 md:min-h-screen md:grid-cols-6">
+{% for post in site.posts limit: 10 %}
+<a href="{{post.url}}" class="relative bg-slate-200 bg-cover bg-center p-10 
+  {% cycle 'col-span-3 row-span-2', 'col-span-1', 'col-span-2', 'col-span-3 row-span-2', 'row-span-2', 'col-span-1', 'col-span-1', 'col-span-2', 'col-span-2', 'col-span-1 %}" 
+style="background-image:url('{{post.featured-image}}')">
+  <div class="absolute inset-0 cursor-pointer p-4 m-4 text-transparent hover:bg-white hover:text-black transition duration-300">
+    <h2 class="flex justify-center items-center playfair">{{post.title}}</h2>
+  </div>
+</a>
+{% endfor %}
+</section>
