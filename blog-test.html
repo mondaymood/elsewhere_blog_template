@@ -33,8 +33,11 @@ seo:
 <a href="{{post.url}}" class="relative bg-slate-200 bg-cover bg-center p-10 
   {% cycle 'col-span-3 row-span-2', 'col-span-1', 'col-span-2', 'col-span-3 row-span-2', 'row-span-2', 'col-span-1', 'col-span-1', 'col-span-2', 'col-span-2', 'col-span-1 %}" 
 style="background-image:url('{{post.featured-image}}')">
-  <div class="absolute inset-0 cursor-pointer p-4 m-4 text-transparent hover:bg-white hover:text-black transition duration-300">
-    <h2 class="flex justify-center items-center playfair">{{post.title}}</h2>
+  <div class="absolute text-center inset-0 flex justify-center items-center cursor-pointer p-2 m-2 text-transparent hover:bg-white/75 hover:text-black transition duration-300">
+    <div><span class="text-xs uppercase py-5 block">{{post.categories}}</span>
+    <h2 class="playfair text-xl block">{{post.title}}</h2>
+    <span class="text-xs uppercase py-5 block">{{post.author}}</span>
+    <span class="text-xs uppercase py-5 block">{{post.date | date: "%d %b %Y"}}</span></div>
   </div>
 </a>
 {% endfor %}
