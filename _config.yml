@@ -1,7 +1,8 @@
 collections:
- posts:
-   output: true
-   permalink: /posts/:slug
+  posts:
+    output: true
+  archives:
+    output: true
 
 _select_data:
   background-colors:

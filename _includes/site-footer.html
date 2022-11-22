@@ -4,15 +4,23 @@
   <div class="container mx-auto grid grid-cols-2">
     <div>
       <div class="playfair text-4xl mb-10">Elsewhere.</div>
-      <i class="fab fa-facebook-f inline-block"></i>
-      <i class="fab fa-facebook-f inline-block"></i>
-      <i class="fab fa-facebook-f inline-block"></i>
+      <div class="flex flex-row space-x-5">
+        <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="http://pinterest.com/pin/create/link/?url={{page.url}}&description={{page.title}}" rel="nofollow" target="_blank" title="Share on Pinterest">
+          <i class="fab fa-pinterest-p"></i>
+        </a>
+      </div>
     </div>
-    <div>
-      <a class="inline-block border-b border-white hover:border-b hover:border-orange-400" href="/index.html">Link</a>
-      <a class="inline-block border-b border-white hover:border-b hover:border-orange-400" href="/index.html">Link</a>
-      <a class="inline-block border-b border-white hover:border-b hover:border-orange-400" href="/index.html">Link</a>
-      <a class="inline-block border-b border-white hover:border-b hover:border-orange-400" href="/index.html">Link</a>
+    <div class="flex flex-col w-auto">
+      <a class="border-b border-white hover:border-b hover:border-orange-400" href="/index.html">Link</a>
+      <a class="border-b border-white hover:border-b hover:border-orange-400" href="/index.html">Link</a>
+      <a class="border-b border-white hover:border-b hover:border-orange-400" href="/index.html">Link</a>
+      <a class="border-b border-white hover:border-b hover:border-orange-400" href="/index.html">Link</a>
     </div>
   </div>
 </footer>
