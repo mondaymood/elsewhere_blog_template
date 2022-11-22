@@ -23,14 +23,16 @@ seo:
 
 <!------------------ Headline ------------------>
 
-<section class="text-center mt-10 w-[50%]">
-  <h1 class="playfair text-2xl">{{page.heading}}</h1>
-  <p class="mt-5 text-xs">{{page.description}}</h1>
+<section class="text-center flex justify-center my-16 mx-auto w-[50%]">
+  <div>
+    <h1 class="playfair text-2xl">{{page.heading}}</h1>
+    <p class="mt-5 text-xs">{{page.description}}</h1>
+  </div>
 </section>
 
 <!------------------ Desktop grid ------------------>
 
-<section class="hidden container mx-auto mt-10 mb-20 md:grid grid-cols-3 gap-3 md:min-h-screen md:grid-cols-6">
+<section class="hidden container mx-auto mt-4 mb-32 md:grid grid-cols-3 gap-6 md:min-h-screen md:grid-cols-6">
 
   {% for post in site.posts limit: 10 %}
 

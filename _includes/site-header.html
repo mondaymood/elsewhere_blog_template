@@ -1,21 +1,37 @@
 <!------------------ Site-Header ------------------>
 
 <header class="text-center mt-10 top-0 bg-white z-20">
-  <div class="playfair text-6xl mb-10"><a href="/index.html">Elsewhere.</a></div>
-  <nav class="p-2 mb-10 flex flex-row space-x-10 flex-nowrap overflow-x-scroll md:overflow-auto scrolling-touch md:justify-center">
-    
-    <a class="inline-block border-b border-black hover:border-b hover:border-orange-400 text-xs uppercase tracking-[.3em] pb-2" href="/_archives/asia.html">Asia</a>
-    <a class="inline-block border-b border-black hover:border-b hover:border-orange-400 text-xs uppercase tracking-[.3em] pb-2" href="/_archives/asia.html">Europe</a>
-    <a class="inline-block border-b border-black hover:border-b hover:border-orange-400 text-xs uppercase tracking-[.3em] pb-2" href="/_archives/asia.html">North America</a>
-    <a class="inline-block border-b border-black hover:border-b hover:border-orange-400 text-xs uppercase tracking-[.3em] pb-2" href="/_archives/asia.html">South America</a>
-    <a class="inline-block border-b border-black hover:border-b hover:border-orange-400 text-xs uppercase tracking-[.3em] pb-2" href="/_archives/asia.html">Australia</a>
   
+  <div class="container mx-auto">
+    <div class="playfair text-6xl mb-10"><a href="/index.html">Elsewhere.</a></div>
+  </div>
 
-    {% for item in post.category %}
-  
-    <a class="inline-block border-b border-white hover:border-b hover:border-orange-400" href="">{{item.category}} Test</a>
 
-    {% endfor %}
+  <div class="grid grid-cols-6 container mx-auto">
+    <div></div>
+    <div class="col-span-4">
+      <nav class="p-2 mb-10 flex flex-row space-x-10 flex-nowrap overflow-x-scroll md:overflow-auto scrolling-touch md:justify-center">  
+        <a class="inline-block border-b border-black hover:border-b hover:border-orange-400 text-xs uppercase tracking-[.3em] pb-2" href="/_archives/asia.html">Asia</a>
+        <a class="inline-block border-b border-black hover:border-b hover:border-orange-400 text-xs uppercase tracking-[.3em] pb-2" href="/_archives/asia.html">Europe</a>
+        <a class="inline-block border-b border-black hover:border-b hover:border-orange-400 text-xs uppercase tracking-[.3em] pb-2" href="/_archives/asia.html">North America</a>
+        <a class="inline-block border-b border-black hover:border-b hover:border-orange-400 text-xs uppercase tracking-[.3em] pb-2" href="/_archives/asia.html">South America</a>
+        <a class="inline-block border-b border-black hover:border-b hover:border-orange-400 text-xs uppercase tracking-[.3em] pb-2" href="/_archives/asia.html">Australia</a>
+      </nav>
+    </div>
+    <div class="flex justify-end pt-1">		
+      <a href="/search.html">
+			  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+        </svg>    
+		  </a>
+    </div>
+  </div>
 
-  </nav>
 </header>
+
+
+{% for item in post.category %}
+  
+<a class="inline-block border-b border-white hover:border-b hover:border-orange-400" href="">{{item.category}} Test</a>
+
+{% endfor %}
