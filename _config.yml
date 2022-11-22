@@ -15,7 +15,11 @@ _select_data:
     md:grid-cols-4: 4 Columns
   image-positions:
     left: Left
-    right: Right      
+    right: Right
+  aspect-ratios:
+    aspect-[4/3]: Landscape
+    aspect-[3/4]: Portrait
+    aspect-square: Square        
 
 page_blocks: []
 
@@ -30,6 +34,10 @@ _array_structures:
         author: Tara Hunka
         category: travel
         date: 2022-11-21
+    - label: Social Sharing
+      icon: article
+      value: 
+        _id: social_sharing   
     - label: CTA banner
       icon: article
       value: 
@@ -77,6 +85,7 @@ _array_structures:
       value:    
         _id: gallery_section
         title: Gallery section
+        aspect-ratio: aspect-[3/4]
         gallery:
           - image: https://images.unsplash.com/photo-1508693926297-1d61ee3df82a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80
           - image: https://images.unsplash.com/photo-1503614472-8c93d56e92ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2011&q=80
