@@ -67,3 +67,14 @@ footer {
 	font-family: 'Playfair Display', serif;
 	font-size: 5rem;
 }
+
+.figtree {
+	font-family: 'Figtree', sans-serif;
+	font-weight: 400;
+	letter-spacing: 0.06em;
+}
+
+
+.span-border-parent:hover span {
+	border-bottom: 1px solid orange;
+}

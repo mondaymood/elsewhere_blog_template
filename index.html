@@ -35,10 +35,10 @@ seo:
   <a href="{{post.url}}" class="relative bg-slate-200 bg-cover bg-center p-10 
     {% cycle 'col-span-3 row-span-2 playfair text-4xl', 'col-span-1', 'col-span-2 playfair text-2xl', 'col-span-3 row-span-2 playfair text-4xl', 'row-span-2', 'col-span-1', 'col-span-1', 'col-span-2 playfair text-2xl', 'col-span-2 playfair text-2xl', 'col-span-1 %}" 
     style="background-image:url('{{post.featured-image}}')">
-    <div class="absolute text-center inset-0 flex justify-center items-center cursor-pointer p-5 m-2 text-transparent hover:bg-white/[.95] hover:text-black transition duration-300">
+    <div class="absolute text-center inset-0 flex justify-center items-center cursor-pointer p-5 m-2 text-transparent span-border-parent hover:bg-white/[.95] hover:text-black transition duration-300">
       <div>
-        <h2 class="leading-7 tracking-[.03em] block mb-5">{{post.title}}</h2>
-        <span class="text-xs uppercase tracking-[.3em] pb-2 border-b-orange-400 border-b">{{post.categories}}</span>
+        <h2 class="leading-7 tracking-[.03em] block mb-4">{{post.title}}</h2>
+        <span class="text-xs uppercase tracking-[.3em] pb-2 figtree">{{post.categories}}</span>
       </div>
     </div>  
   </a>
