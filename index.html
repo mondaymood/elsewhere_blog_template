@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Homepage
+cta-banner: true
 seo:
   title: SEO title
   meta-description:
@@ -12,7 +13,9 @@ seo:
 
 <!------------------ CTA-Banner ------------------>
 
-{% include cta-banner.html %}
+{% for block in page.page_blocks %}
+  {% include /blocks/{{block._id}}.html %}
+{% endfor %}
 
 <!------------------ Blog posts ------------------>
 
