@@ -10,7 +10,6 @@ seo:
   meta-keywords:
   featured-image_path:
   hide-from-google: false
-
 ---
 
 <!------------------ CTA-Banner ------------------>
@@ -27,9 +26,30 @@ seo:
   <h1>{{page.heading}}</h1>
 </section>
 
-<!------------------ Blog posts ------------------>
+<!------------------ Desktop grid ------------------>
 
-<section class="container p-6 mb-6 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 text-center">
+<section class="hidden container mx-auto my-10 md:grid grid-cols-3 gap-2 md:min-h-screen md:grid-cols-6">
+
+  {% for post in site.posts limit: 10 %}
+
+  <a href="{{post.url}}" class="relative bg-slate-200 bg-cover bg-center p-10 
+    {% cycle 'col-span-3 row-span-2', 'col-span-1', 'col-span-2', 'col-span-3 row-span-2', 'row-span-2', 'col-span-1', 'col-span-1', 'col-span-2', 'col-span-2', 'col-span-1 %}" 
+    style="background-image:url('{{post.featured-image}}')">
+    <div class="absolute text-center inset-0 flex justify-center items-center cursor-pointer p-2 m-2 text-transparent hover:bg-white/[.95] hover:text-black transition duration-300">
+      <div>
+        <h2 class="playfair text-[3rem] tracking-[.03em] block">{{post.title}}</h2>
+        <span class="text-xs uppercase block tracking-[.3em] pt-3">{{post.categories}}</span>
+      </div>
+    </div>  
+  </a>
+
+  {% endfor %}
+
+</section>
+
+<!------------------ Mobile grid ------------------>
+
+<section class="md:hidden container p-6 mb-6 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 text-center">
   
   {% for post in site.posts %}
 
