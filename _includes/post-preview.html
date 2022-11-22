@@ -2,7 +2,7 @@
 
 <div>
   <a href="{{post.url}}"><img class="container mx-auto aspect-[3/4] object-cover" src="{{post.featured-image}}"></a>
-  <span class="text-sm uppercase block py-5">{{post.category | join: " / "}}</span>
+  <span class="text-sm uppercase block py-5">{{post.categories | join: " / "}}</span>
   <a href="{{post.url}}" class="inline-block text-lg">{{post.title}}</a>
   <span class="text-sm block py-5">{{post.author}}</span>
   <span class="text-sm block">{{post.date | date: "%d %b %Y"}}</span>

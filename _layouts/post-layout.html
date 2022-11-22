@@ -7,40 +7,28 @@ overlay: true
 
 ---
 
-<!------------------ Title section ------------------>
-
-<section class="text-center py-10 container mx-auto px-4">
-  <span class="text-sm uppercase block py-5">{{page.category}}</span>
-  <h1 class="text-2xl">{{page.title}}</h1>
-  <span class="text-sm block py-5">{{page.author}}</span>
-  <span class="text-sm block">{{page.date | date: "%d %b %Y"}}</span>
-</section>
-
 <!------------------ Image banner ------------------>
 
 <section> 
-  <div class="{% if page.overlay == true %} bg-blend-multiply bg-neutral-500 text-white {% endif %} bg-cover h-[52vh] bg-center flex justify-center items-center text-2xl"
+  <div class="{% if page.overlay == true %} bg-blend-multiply bg-neutral-500 text-white {% endif %} bg-cover h-[50vh] bg-center flex justify-center items-center text-2xl"
   style="background-image: url('{{page.featured-image}}')">
     <div class="text-lg">{{page.banner-text}}</div>
   </div>
 </section>
 
+<!------------------ Title section ------------------>
+
+<section class="text-center py-10 container mx-auto px-4">
+  <span class="text-sm uppercase block py-5">{{page.categories}}</span>
+  <h1 class="text-2xl">{{page.title}}</h1>
+  <span class="text-sm block py-5">{{page.author}}</span>
+  <span class="text-sm block">{{page.date | date: "%d %b %Y"}}</span>
+</section>
+
 <!------------------ Social sharing ------------------>
 
-<div class="bg-slate-500 text-center py-6 text-white sticky left-0 top-20 w-12">
-	<nav class="flex flex-col space-y-6">
-		<a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter">
-			<i class="fab fa-twitter"></i>
-		</a>
-		<a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">
-			<i class="fab fa-facebook-f"></i>
-		</a>
-		<a href="http://pinterest.com/pin/create/link/?url={{page.url}}&description={{page.title}}" rel="nofollow" target="_blank" title="Share on Pinterest">
-			<i class="fab fa-pinterest-p"></i>
-		</a>
-	</nav>
-</div>
-<div class="sticky-nav-fix"></div>
+{% include social-sharing.html %}
+
 <!------------------ Blocks ------------------>
 
 {% for block in page.page_blocks %}
