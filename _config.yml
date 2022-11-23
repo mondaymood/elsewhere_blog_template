@@ -1,8 +1,27 @@
+# This is for Tailwind
+
+sass:
+  dir: _sass
+  style: compressed  
+
+css_dir: "/style"
+
+plugins:
+  - jekyll-postcss
+
+postcss:
+  cache: false
+
+# This is to set collections
+
 collections:
   posts:
     output: true
+    permalink: /posts/:slug
   archives:
     output: true
+
+# This is for CloudCannon options 
 
 _select_data:
   background-colors:
@@ -21,6 +40,8 @@ _select_data:
     aspect-[4/3]: Landscape
     aspect-[3/4]: Portrait
     aspect-square: Square        
+
+# This is for Page blocks
 
 page_blocks: []
 
